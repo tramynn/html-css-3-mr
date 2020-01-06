@@ -1,0 +1,53 @@
+.NavBar-Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink;
+  list-style-type: none;
+  height: 7vh;
+}
+
+.Logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 25px;
+  text-transform: uppercase;
+}
+
+.NavLinks {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+li {
+  padding: 0px 20px;
+}
+
+li:hover {
+  color: pink;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.Hidden-by-default {
+  display: none;
+}
+
+.Hamburger-Menu {
+  height: 35px;
+  width: 35px;
+  margin-right: 20px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .Hamburger-Menu {
+    display: block;
+  }
+
+  .NavLinks {
+    display: none;
+  }
+}
